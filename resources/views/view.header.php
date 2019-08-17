@@ -11,14 +11,14 @@
                 echo "<form class='login-form' action='' method='post'>";
                 echo "    <div class='login-form-row'><i class='fas fa-user fa-fw icon'></i> <input class='login-form-input' type='text' name='username' placeholder='Username' required></div>";
                 echo "    <div class='login-form-row'><i class='fas fa-key fa-fw icon'></i> <input class='login-form-input' type='password' name='password' placeholder='Password' required></div>";
-                echo "    <div><input class='login-form-button' type='submit' name='login' value='Login' /></div>";
+                echo "    <div><button class='site-button' type='submit' name='login'>Login</button></div>";
                 echo "</form>";
             }
             else
             {
                 echo "<form class='login-form' action='' method='post'>";
                 echo "    <div class='profile-row'>You are now logged in as <b>" . getLoggedInUsername() . "</b></div>";
-                echo "    <div><input class='logout-form-button' type='submit' name='logout' value='Logout' /></div>";
+                echo "    <div><button class='site-button' type='submit' name='logout'>Logout</button></div>";
                 echo "</form>";
             }
             
