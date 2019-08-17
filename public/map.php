@@ -61,26 +61,28 @@
                 			    $link_melee =    $row["mel"];
                 			    $link_obs =      $row["obs"];
                 			    
-                			    echo "<img src='http://www.panschk.de/mappage/", $pic, "' style='height: auto; width: auto; max-height: 350px; max-width: 350px;' />";
-                			    echo "<br />";
-                			    echo "<br />";
+                			    echo "<img src='http://www.panschk.de/mappage/", $pic, "' style='height: auto; width: auto; max-height: 350px; max-width: 350px; float: left; margin-right: 20px;' />";
                 			    echo "<div class='news-article-title'>", $mapname, "</div>";
+                			    echo "<div><b>Map ID: </b> #", $mapid, "</div>";
                 			    echo "<br />";
                 			    echo "<div><b>Author: </b> ", $author, "</div>";
                 			    echo "<div><b>Map Size:</b> ", $map_size, "</div>";
+                			    echo "<div><b>Tileset:</b> ", $tileset, "</div>";
                 			    echo "<div><b>Last Updated:</b> ", $last_updated, "</div>";
                 			    echo "<br />";
                 			    
+                			    echo "<div>";
                 			    if (!empty($link_melee))
                 			    {
-                			        echo "<div><i class='fas fa-file-download fa-fw icon'></i> Melee</div>";
+                			        echo "<button class='site-button' style='font-size: 16px; margin-right: 10px;'><i class='fas fa-file-download fa-fw icon'></i> Download Melee Version</button>";
                 			    }
                 			    
                 			    if (!empty($link_obs))
                 			    {
-                			        echo "<div><i class='fas fa-file-download fa-fw icon'></i> Obs</div>";
+                			        echo "<button class='site-button' style='font-size: 16px;'><i class='fas fa-file-download fa-fw icon'></i> Download Observer Version</button>";
                 			    }
                 			    echo "<div style='clear: both;'></div>";
+                			    echo "</div>";
                 			    
 //                 			    foreach ($row as $key => $value)
 //                 			    {
