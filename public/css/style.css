@@ -184,8 +184,7 @@ a:hover
 	outline: none;
 }
 
-.login-form-button,
-.logout-form-button
+.site-button
 {
 	background-color: rgba(64, 80, 96, 0.7);
 	border: 1px solid #445566;
@@ -194,8 +193,7 @@ a:hover
 	padding: 4px 8px 2px 8px;
 }
 
-.login-form-button:hover,
-.logout-form-button:hover
+.site-button:hover
 {
 	background-color: rgba(80, 96, 112, 0.7);
 	border: 1px solid #556677;
