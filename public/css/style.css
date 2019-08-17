@@ -1,0 +1,339 @@
+/** -------------------------------------------------- **/
+/** --- HTML TAGS                                  --- **/
+/** -------------------------------------------------- **/
+
+html
+{
+	overflow: hidden;
+}
+
+body
+{
+	background-color: #030303;
+	color: #EEEEEE;
+	font-family: 'Khula', Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	height: 100vh;
+	line-height: 1.2;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	perspective: 1px;
+	transform-style: preserve-3d;
+}
+
+a
+{
+	color: #2F6F9E;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #3782B7;
+	text-decoration: underline;
+}
+
+
+
+/** -------------------------------------------------- **/
+/** --- PARALLAX                                   --- **/
+/** -------------------------------------------------- **/
+
+.parallax-wrapper
+{
+	background-image: url("../images/background.jpg");
+	background-position: bottom;
+	background-size: 3840px 2160px;
+	content: "";
+	height: 100vh;
+	transform: translateZ(-10px) scale(15);
+	transform-style: preserve-3d;
+	width: 100vw;
+	z-index: -1;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+
+/** -------------------------------------------------- **/
+/** --- PAGE STRUCTURE - HEADER, MIDDLE & FOOTER   --- **/
+/** -------------------------------------------------- **/
+
+.page-structure-wrapper
+{
+	margin: 0 auto;
+	max-width: 1600px;
+	padding: 20px;
+}
+
+.header
+{
+	height: 100px;
+	padding: 25px;
+}
+
+.header-logo
+{
+	float: left;
+}
+
+.header-login
+{
+	float: right;
+	font-size: 12px;
+	text-align: right;
+}
+
+.header:after
+{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.middle
+{
+	width: 100%;
+}
+
+.middle-navbar
+{
+	background-color: rgba(5, 16, 22, 0.5);
+	border: 2px solid rgba(128, 192, 255, 0.075);
+	float: left;
+	margin-right: 20px;
+	padding: 10px 30px 10px 10px;
+	position: relative;
+	width: 280px;
+	z-index: 1000;
+}
+
+.middle-content
+{
+	float: left;
+	position: relative;
+	width: calc(100% - 300px - 44px);
+	z-index: 1;
+}
+
+.middle-content-section-outer
+{
+	background-color: rgba(128, 192, 255, 0.15);
+	box-shadow: 0 0 100px 2px #163248;
+	margin-bottom: 50px;
+	padding: 2px;
+}
+
+.middle-content-section-inner
+{
+	background: rgba(5, 16, 22, 0.9);
+	padding: 20px;
+	text-align: left;
+}
+
+.middle:after
+{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.footer
+{
+	font-size: 10px;
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+/** -------------------------------------------------- **/
+/** --- LOGIN & PROFILE                            --- **/
+/** -------------------------------------------------- **/
+
+.login-form
+{
+	margin-bottom: 0;
+}
+
+.login-form-row,
+.profile-row
+{
+	margin-bottom: 5px;
+}
+
+.login-form-input
+{
+	background-color: rgba(64, 64, 64, 0.3);
+	border-color: #445566;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	color: #6688AA;
+	font-family: inherit;
+	padding: 4px 8px 2px 8px;
+}
+
+.login-form-input:focus
+{
+	outline: none;
+}
+
+.login-form-button,
+.logout-form-button
+{
+	background-color: rgba(64, 80, 96, 0.7);
+	border: 1px solid #445566;
+	color: #999999;
+	font-family: inherit;
+	padding: 4px 8px 2px 8px;
+}
+
+.login-form-button:hover,
+.logout-form-button:hover
+{
+	background-color: rgba(80, 96, 112, 0.7);
+	border: 1px solid #556677;
+	color: #AAAAAA;
+	cursor: pointer;
+}
+
+
+
+/** -------------------------------------------------- **/
+/** --- NAVBAR                                     --- **/
+/** -------------------------------------------------- **/
+
+.navbar-section
+{
+	margin-bottom: 20px;
+}
+
+.navbar-section-title
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.navbar-section-title-link
+{
+	text-decoration: none;
+}
+
+.navbar-section-title-label
+{
+	color: #DDDDDD;
+}
+
+.navbar-section-title-link:hover
+{
+	text-decoration: none;
+}
+
+.navbar-section-title-link:hover .navbar-section-title-icon
+{
+	color: #AABBCC;
+}
+
+.navbar-section-title-link:hover .navbar-section-title-label
+{
+	color: #F9F9F9;
+}
+
+.navbar-section-content
+{
+	color: #AAAAAA;
+	font-size: 12px;
+}
+
+.navbar-section-content-row
+{
+	padding: 4px 0;
+	margin-left: 24px;
+}
+
+.navbar-section-content-row-map
+{
+	margin-left: 24px;
+}
+
+.navbar-map-link
+{
+	color: #AAAAAA;
+	text-decoration: none;
+}
+
+.navbar-map-link:hover
+{
+	color: #CCCCCC;
+	text-decoration: none;
+}
+
+.map-tileset-icon
+{
+	border: 1px solid #333333;
+}
+
+.navbar-map-name
+{
+	position: relative;
+	top: -5px;
+}
+
+.navbar-link:hover
+{
+	color: #CCCCCC;
+	cursor: pointer;
+}
+
+.icon
+{
+	color: #66798A;
+}
+
+.navbar-forum-username
+{
+	color: #CCCCCC;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+
+/** -------------------------------------------------- **/
+/** --- NEWS                                       --- **/
+/** -------------------------------------------------- **/
+
+.news-article-title
+{
+	color: #BBBB99;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.news-article-author
+{
+	color: #AAAAAA;
+	font-size: 12px;
+}
+
+.news-article-text
+{
+	border-top: 1px dashed #0B2533;
+	border-bottom: 1px dashed #0B2533;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.news-article-comments
+{
+	font-weight: bold;
+}
