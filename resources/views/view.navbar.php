@@ -68,7 +68,7 @@
     			    
     			    echo "<div class='navbar-section-content-row-map'>";
     			    echo "   <a class='navbar-map-link' href='map.php?id=", $mapid, "'>";
-    			    echo "       <img class='map-tileset-icon' src='http://www.panschk.de/mappage/", $tileset, ".gif' />";
+    			    echo "       <img class='map-tileset-icon' src='images/tileset-icons/", $tileset, ".gif' />";
     			    echo "       <span class='navbar-map-name'>", $mapname, "</span>";
     			    echo "   </a>";
     			    echo "</div>";
@@ -98,7 +98,7 @@
     			    
     			    echo "<div class='navbar-section-content-row-map'>";
     			    echo "   <a class='navbar-map-link' href='map.php?id=", $mapid, "'>";
-    			    echo "       <img class='map-tileset-icon' src='http://www.panschk.de/mappage/", $tileset, ".gif' />";
+    			    echo "       <img class='map-tileset-icon' src='images/tileset-icons/", $tileset, ".gif' />";
     			    echo "       <span class='navbar-map-name'>", $mapname, "</span>";
     			    echo "   </a>";
     			    echo "</div>";
@@ -128,7 +128,7 @@
     			    
     			    echo "<div class='navbar-section-content-row-map'>";
     			    echo "   <a class='navbar-map-link' href='map.php?id=", $mapid, "'>";
-    			    echo "       <img class='map-tileset-icon' src='http://www.panschk.de/mappage/", $tileset, ".gif' />";
+    			    echo "       <img class='map-tileset-icon' src='images/tileset-icons/", $tileset, ".gif' />";
     			    echo "       <span class='navbar-map-name'>", $mapname, "</span>";
     			    echo "   </a>";
     			    echo "</div>";
