@@ -335,3 +335,60 @@ a:hover
 {
 	font-weight: bold;
 }
+
+
+
+/** -------------------------------------------------- **/
+/** --- MAP                                        --- **/
+/** -------------------------------------------------- **/
+
+.map-details
+{
+	float: left;
+	min-width: 200px;
+	width: calc(100% - 350px);
+}
+
+.map-image
+{
+	float: right;
+}
+
+.map-image img
+{
+	height: auto;
+	max-height: 350px;
+	max-width: 350px;
+	width: auto;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.middle-content-section-inner-map-comments
+{
+	background: rgba(5, 16, 22, 0.9);
+	text-align: left;
+}
+
+.map-comments-title
+{
+	color: #BBBB99;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+.map-comment-username
+{
+	background: linear-gradient(45deg, rgba(25, 80, 110, 0.3), transparent);
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+.map-comment-text
+{
+	padding: 20px 20px 50px 20px;
+}
