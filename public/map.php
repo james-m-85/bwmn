@@ -79,7 +79,9 @@
                 			    {
                 			        echo "<br />";
                 			        echo "<div>";
-                			        echo "   <button class='site-button'><i class='fas fa-file-download fa-fw icon'></i> Download Melee Version</button>";
+                			        echo "   <form action='http://www.panschk.de/mappage/", $link_melee, "' method='get'>";
+                			        echo "       <button class='site-button'><i class='fas fa-file-download fa-fw icon'></i> Download Melee Version</button>";
+                			        echo "   </form>";
                 			        echo "</div>";
                 			    }
                 			    
@@ -87,7 +89,9 @@
                 			    {
                 			        echo "<br />";
                 			        echo "<div>";
-                			        echo "   <button class='site-button'><i class='fas fa-file-download fa-fw icon'></i> Download Observer Version</button>";
+                			        echo "   <form action='http://www.panschk.de/mappage/", $link_obs, "' method='get'>";
+                			        echo "       <button class='site-button'><i class='fas fa-file-download fa-fw icon'></i> Download Observer Version</button>";
+                			        echo "   </form>";
                 			        echo "</div>";
                 			    }
                 			    echo "</div>";
