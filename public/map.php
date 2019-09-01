@@ -94,7 +94,7 @@
                 			    
                 			    
                 			    echo "<div class='map-image'>";
-                			    echo "   <img src='http://www.panschk.de/mappage/", $pic, "' />";
+                			    echo "   <a href='http://www.panschk.de/mappage/", $pic, "' target='_blank'><img src='http://www.panschk.de/mappage/", $pic, "' /></a>";
                 			    echo "</div>";
                 			    
                 			    echo "<div class='clear'></div>";
