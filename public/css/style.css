@@ -392,3 +392,14 @@ a:hover
 {
 	padding: 20px 20px 50px 20px;
 }
+
+.post-comment-form
+{
+	margin-bottom: 0;
+	padding: 20px;
+}
+
+.post-comment-button
+{
+	margin-top: 10px;
+}

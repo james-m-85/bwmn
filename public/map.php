@@ -2,6 +2,7 @@
     
     include "../resources/controllers/controller.db-connect.php";
     include "../resources/controllers/controller.session.php";
+    include "../resources/controllers/controller.map.php";
     
     
     
@@ -47,8 +48,8 @@
     			
     			
     			<div class="middle-content">
-					<div class='middle-content-section-outer'>
-						<div class='middle-content-section-inner'>
+					<div class="middle-content-section-outer">
+						<div class="middle-content-section-inner">
             				
                 			<?php
                                 
@@ -103,15 +104,11 @@
                 			
         				</div>
     				</div>
-    			</div>
-    			
-    			
-    			
-    			
-    			
-    			<div class="middle-content">
-					<div class='middle-content-section-outer'>
-						<div class='middle-content-section-inner-map-comments'>
+    				
+    				
+    				
+					<div class="middle-content-section-outer">
+						<div class="middle-content-section-inner-map-comments">
             				
                 			<?php
                 			
@@ -133,8 +130,35 @@
                 			
         				</div>
     				</div>
-    			</div>
     			
+    			
+    			
+    			
+        		<?php
+        			
+                    if (isUserLoggedIn())
+                    {
+                        echo "<div class='middle-content-section-outer'>";
+						echo "    <div class='middle-content-section-inner-map-comments'>";
+
+						echo "        <div class='map-comments-title'>Post Comment</div>";
+                        
+                        
+                        echo "        <form class='post-comment-form' action='' method='post'>";
+                        echo "            <div class='profile-row'><i class='fas fa-user fa-fw icon'></i> <b>" . getLoggedInUsername() . "</b></div>";
+                        echo "            <div>";
+                        echo "                <textarea rows='12' name='ctext' placeholder='Enter comment here...' style='width: 100%;'></textarea>";
+                        echo "                <input type='hidden' name='mapid' value='", $mapid, "' />";
+                        echo "            </div>";
+                        echo "            <div class='post-comment-button'><button class='site-button' type='submit' name='post-comment'>Post</button></div>";
+                        echo "        </form>";
+                        echo "    </div>";
+                        echo "</div>";
+                    }
+                    
+        		?>
+    			
+    			</div>
     			
     			
     			
