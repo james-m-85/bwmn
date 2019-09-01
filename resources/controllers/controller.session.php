@@ -29,16 +29,21 @@
     
     function isUserLoggedIn()
     {
-        if (isset($_SESSION["login_user"]))
+        if (isset($_SESSION["login_username"]))
         {
             return true;
         }
         return false;
     }
     
+    function getLoggedInUserId()
+    {
+        return $_SESSION["login_userId"];
+    }
+    
     function getLoggedInUsername()
     {
-        return $_SESSION["login_user"];
+        return $_SESSION["login_username"];
     }
     
     function login($db_connection)
@@ -67,9 +72,11 @@
                 {
                     //Get the username from the database with the correct character case.
                     $usernameFromDB = $row["username"];
+                    $userIdFromDB = $row["userid"];
                     
                     //Initialize the session.
-                    $_SESSION["login_user"] = $usernameFromDB;
+                    $_SESSION["login_userId"] = $userIdFromDB;
+                    $_SESSION["login_username"] = $usernameFromDB;
                 }
             }
         }
